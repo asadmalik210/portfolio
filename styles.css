@@ -353,6 +353,35 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .pc-stars span { color:var(--gray); margin-left:4px; }
 .pc-title { font-size:1.15rem; font-weight:800; letter-spacing:-0.01em; }
 .pc-desc { color:var(--gray); font-size:0.88rem; line-height:1.6; flex:1; }
+.pc-detail {
+  color:#c9c9c9;
+  font-size:0.82rem;
+  line-height:1.65;
+  margin-top:2px;
+}
+.project-screens {
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:8px;
+  margin:10px 0 4px;
+  padding:10px;
+  border-radius:16px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025));
+  border:1px solid rgba(255,255,255,0.07);
+  overflow:hidden;
+}
+.project-screens img {
+  width:100%;
+  aspect-ratio:9/19.5;
+  object-fit:cover;
+  object-position:top center;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.1);
+  box-shadow:0 12px 26px rgba(0,0,0,0.24);
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover .project-screens img { box-shadow:0 16px 34px rgba(0,0,0,0.3); }
+.project-screens img:hover { transform:translateY(-4px) scale(1.03); }
 .pc-tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
 .pc-tags span { background:rgba(255,255,255,0.05); border:1px solid var(--border); color:var(--gray); padding:4px 10px; border-radius:6px; font-size:0.72rem; font-weight:500; }
 
@@ -559,6 +588,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .sidebar-name, .sidebar-role, .sidebar-bio { text-align:left; }
   .sidebar-stats { padding:14px 4px; }
   .contact-form, .tl-card, .skill-block, .pc-body { padding:22px; }
+  .project-screens { gap:6px; padding:8px; }
   .cinfo-card { align-items:flex-start; }
   .cinfo-val { word-break:break-word; }
 }
