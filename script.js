@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       window.location.href = `mailto:saeed.asadullah96@gmail.com?subject=${subject}&body=${body}`;
       ok.classList.add('show');
-      btn.innerHTML = 'Open Email <i class="fas fa-paper-plane"></i>';
+      btn.innerHTML = 'Open Email <svg class="icon"><use href="#icon-send"></use></svg>';
       btn.disabled = false;
       setTimeout(() => ok.classList.remove('show'), 4000);
     }, 250);

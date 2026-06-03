@@ -21,18 +21,38 @@
   <meta name="twitter:title" content="Asadullah Saeed | Senior iOS Developer">
   <meta name="twitter:description" content="Senior iOS Developer building secure, scalable iOS apps with Swift, UIKit, SwiftUI, Firebase, Maps, and NetworkExtension.">
   <meta name="twitter:image" content="https://asadmalik.xyz/og-image.jpg">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
   <a class="skip-link" href="#home">Skip to content</a>
 
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 10.8 12 3l9 7.8v9.1a1.1 1.1 0 0 1-1.1 1.1h-5.2v-6.2H9.3V21H4.1A1.1 1.1 0 0 1 3 19.9Z"/></symbol>
+    <symbol id="icon-projects" viewBox="0 0 24 24"><path d="M3.5 6.4A2.4 2.4 0 0 1 5.9 4h4.2l2.1 2.2h5.9a2.4 2.4 0 0 1 2.4 2.4v9a2.4 2.4 0 0 1-2.4 2.4H5.9a2.4 2.4 0 0 1-2.4-2.4Z"/></symbol>
+    <symbol id="icon-skills" viewBox="0 0 24 24"><path d="m8.2 8.2-4 3.8 4 3.8M15.8 8.2l4 3.8-4 3.8M13.5 5.2l-3 13.6"/></symbol>
+    <symbol id="icon-work" viewBox="0 0 24 24"><path d="M9 6V4.8A1.8 1.8 0 0 1 10.8 3h2.4A1.8 1.8 0 0 1 15 4.8V6M4 8.5h16v10A2.5 2.5 0 0 1 17.5 21h-11A2.5 2.5 0 0 1 4 18.5Z"/><path d="M4 11.5h16M9.5 11.5v2h5v-2"/></symbol>
+    <symbol id="icon-send" viewBox="0 0 24 24"><path d="M21 3 10.8 20.5l-2.1-7.2L2 10.2Z"/><path d="m8.7 13.3 5.2-4.1"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v11M8 10l4 4 4-4"/><path d="M5 19h14"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M5 9h3v10H5Z"/><path d="M6.5 5.2v.1"/><path d="M11 9h3v1.4a3.4 3.4 0 0 1 6 2.2V19h-3v-5.4a1.6 1.6 0 0 0-3.2 0V19H11Z"/></symbol>
+    <symbol id="icon-appstore" viewBox="0 0 24 24"><path d="M8 17h8M9.4 14 13.8 6M14.6 14 10.2 6"/><path d="M6.4 21h11.2a3.4 3.4 0 0 0 3.4-3.4V6.4A3.4 3.4 0 0 0 17.6 3H6.4A3.4 3.4 0 0 0 3 6.4v11.2A3.4 3.4 0 0 0 6.4 21Z"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 5h5v5"/><path d="m19 5-9 9"/><path d="M19 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4"/></symbol>
+    <symbol id="icon-envelope" viewBox="0 0 24 24"><path d="M4 6h16v12H4Z"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="icon-file" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7Z"/><path d="M14 3v5h5M9.5 13h5M9.5 17h5"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+    <symbol id="icon-terminal" viewBox="0 0 24 24"><path d="m5 8 4 4-4 4M11 17h8"/></symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></symbol>
+    <symbol id="icon-sitemap" viewBox="0 0 24 24"><path d="M12 5v6M6 19v-4h12v4"/><path d="M9 3h6v4H9ZM3 17h6v4H3ZM15 17h6v4h-6Z"/></symbol>
+    <symbol id="icon-tools" viewBox="0 0 24 24"><path d="M14.5 6.5 17 4l3 3-2.5 2.5"/><path d="M3 21l8.8-8.8"/><path d="M7 4a5 5 0 0 0 6 6l7 7-3 3-7-7a5 5 0 0 0-6-6Z"/></symbol>
+  </svg>
+
   <!-- Floating Nav Pill -->
   <nav class="nav-pill" id="navPill" aria-label="Primary navigation">
-    <a href="#home"       class="nav-icon active" id="ni-home"   title="Home" aria-label="Home"><i class="fas fa-home"></i></a>
-    <a href="#projects"   class="nav-icon"        id="ni-proj"   title="Projects" aria-label="Projects"><i class="far fa-folder-open"></i></a>
-    <a href="#skills"     class="nav-icon"        id="ni-skills" title="Skills" aria-label="Skills"><i class="fas fa-code"></i></a>
-    <a href="#experience" class="nav-icon"        id="ni-exp"    title="Experience" aria-label="Experience"><i class="fas fa-briefcase"></i></a>
-    <a href="#contact"    class="nav-icon"        id="ni-contact" title="Contact" aria-label="Contact"><i class="far fa-paper-plane"></i></a>
+    <a href="#home"       class="nav-icon active" id="ni-home"   title="Home" aria-label="Home"><svg class="icon"><use href="#icon-home"></use></svg></a>
+    <a href="#projects"   class="nav-icon"        id="ni-proj"   title="Projects" aria-label="Projects"><svg class="icon"><use href="#icon-projects"></use></svg></a>
+    <a href="#skills"     class="nav-icon"        id="ni-skills" title="Skills" aria-label="Skills"><svg class="icon"><use href="#icon-skills"></use></svg></a>
+    <a href="#experience" class="nav-icon"        id="ni-exp"    title="Experience" aria-label="Experience"><svg class="icon"><use href="#icon-work"></use></svg></a>
+    <a href="#contact"    class="nav-icon"        id="ni-contact" title="Contact" aria-label="Contact"><svg class="icon"><use href="#icon-send"></use></svg></a>
   </nav>
 
   <div class="page-wrap">
@@ -78,13 +98,13 @@
 
         <div class="sidebar-links">
           <a href="Resume-Asadullah-Saeed.pdf" target="_blank" rel="noopener noreferrer" class="sidebar-link-btn resume" id="sb-resume" download>
-            <i class="fas fa-file-arrow-down"></i> Resume
+            <svg class="icon"><use href="#icon-download"></use></svg> Resume
           </a>
           <a href="https://www.linkedin.com/in/asad-ullah-saeed-334b891b3/" target="_blank" rel="noopener noreferrer" class="sidebar-link-btn" id="sb-linkedin">
-            <i class="fab fa-linkedin"></i> LinkedIn
+            <svg class="icon"><use href="#icon-linkedin"></use></svg> LinkedIn
           </a>
           <a href="https://apps.apple.com/pk/developer/adara-networks/id1743034595" target="_blank" rel="noopener noreferrer" class="sidebar-link-btn outline" id="sb-appstore">
-            <i class="fab fa-app-store-ios"></i> App Store
+            <svg class="icon"><use href="#icon-appstore"></use></svg> App Store
           </a>
         </div>
 
@@ -92,7 +112,6 @@
           <span class="avail-dot"></span> Available for hire
         </div>
 
-        <p class="share-note">This portfolio opens directly from the folder. No hosting required.</p>
       </div>
     </aside>
 
@@ -108,9 +127,14 @@
           <span class="line-accent">iOS APPS</span>
         </h2>
         <p class="hero-desc">Passionate about building intuitive, secure, and scalable mobile experiences that stand out on the App Store.</p>
+        <div class="hero-highlights" aria-label="Career highlights">
+          <span>Published App Store apps</span>
+          <span>Production iOS ownership</span>
+          <span>Secure mobile architecture</span>
+        </div>
         <div class="hero-btns" aria-label="Primary actions">
-          <a href="#projects" class="btn-accent" id="btn-work">View My Work <i class="fas fa-arrow-right"></i></a>
-          <a href="Resume-Asadullah-Saeed.pdf" target="_blank" rel="noopener noreferrer" class="btn-ghost" id="btn-resume" download>Resume <i class="fas fa-file-arrow-down"></i></a>
+          <a href="#projects" class="btn-accent" id="btn-work">View My Work <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+          <a href="Resume-Asadullah-Saeed.pdf" target="_blank" rel="noopener noreferrer" class="btn-ghost" id="btn-resume" download>Resume <svg class="icon"><use href="#icon-download"></use></svg></a>
           <a href="#contact"  class="btn-ghost"  id="btn-hire">Hire Me</a>
         </div>
       </section>
@@ -126,7 +150,7 @@
           <a href="https://apps.apple.com/pk/app/vpn-express-fast-secure-vpn/id6740760260" target="_blank" rel="noopener noreferrer" class="project-card" id="pc-vpn">
             <div class="pc-thumb">
               <img src="thumb-vpn.png" alt="VPN Express">
-              <div class="pc-overlay"><i class="fab fa-apple"></i> View on App Store</div>
+              <div class="pc-overlay"><svg class="icon"><use href="#icon-appstore"></use></svg> View on App Store</div>
             </div>
             <div class="pc-body">
               <div class="pc-meta">
@@ -152,7 +176,7 @@
           <a href="https://apps.apple.com/pk/app/zgo-app/id1670052546" target="_blank" rel="noopener noreferrer" class="project-card" id="pc-zgo">
             <div class="pc-thumb">
               <img src="thumb-zgo.png" alt="ZGO App">
-              <div class="pc-overlay"><i class="fab fa-apple"></i> View on App Store</div>
+              <div class="pc-overlay"><svg class="icon"><use href="#icon-appstore"></use></svg> View on App Store</div>
             </div>
             <div class="pc-body">
               <div class="pc-meta">
@@ -177,7 +201,7 @@
           <a href="https://apps.apple.com/pk/app/mycab-zambia/id6450542123" target="_blank" rel="noopener noreferrer" class="project-card" id="pc-mycab">
             <div class="pc-thumb">
               <img src="thumb-mycab.png" alt="MyCab Zambia">
-              <div class="pc-overlay"><i class="fab fa-apple"></i> View on App Store</div>
+              <div class="pc-overlay"><svg class="icon"><use href="#icon-appstore"></use></svg> View on App Store</div>
             </div>
             <div class="pc-body">
               <div class="pc-meta">
@@ -212,7 +236,7 @@
                 <div class="orion-glow"></div>
                 <div class="orion-label">ORION AI</div>
               </div>
-              <div class="pc-overlay"><i class="fab fa-apple"></i> View on App Store</div>
+              <div class="pc-overlay"><svg class="icon"><use href="#icon-appstore"></use></svg> View on App Store</div>
             </div>
             <div class="pc-body">
               <div class="pc-meta">
@@ -244,7 +268,7 @@
 
         <div class="skills-grid">
           <div class="skill-block" id="skb-lang">
-            <h3><i class="fas fa-terminal"></i> Languages</h3>
+            <h3><svg class="icon"><use href="#icon-terminal"></use></svg> Languages</h3>
             <div class="skill-bars">
               <div class="sbar-item"><div class="sbar-top"><span>Swift</span><span>95%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="95"></div></div></div>
               <div class="sbar-item"><div class="sbar-top"><span>SwiftUI</span><span>88%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="88"></div></div></div>
@@ -253,7 +277,7 @@
           </div>
 
           <div class="skill-block" id="skb-fw">
-            <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+            <h3><svg class="icon"><use href="#icon-layers"></use></svg> Frameworks</h3>
             <div class="skill-bars">
               <div class="sbar-item"><div class="sbar-top"><span>UIKit</span><span>95%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="95"></div></div></div>
               <div class="sbar-item"><div class="sbar-top"><span>Firebase</span><span>85%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
@@ -262,7 +286,7 @@
           </div>
 
           <div class="skill-block" id="skb-arch">
-            <h3><i class="fas fa-sitemap"></i> Architecture</h3>
+            <h3><svg class="icon"><use href="#icon-sitemap"></use></svg> Architecture</h3>
             <div class="skill-cloud">
               <span>MVVM</span><span>MVC</span><span>VIPER</span><span>Clean Architecture</span>
               <span>Combine</span><span>RxSwift</span><span>DI</span><span>REST APIs</span>
@@ -271,7 +295,7 @@
           </div>
 
           <div class="skill-block" id="skb-tools">
-            <h3><i class="fas fa-tools"></i> Tools & SDKs</h3>
+            <h3><svg class="icon"><use href="#icon-tools"></use></svg> Tools & SDKs</h3>
             <div class="skill-cloud">
               <span>Xcode</span><span>Instruments</span><span>TestFlight</span><span>Fastlane</span>
               <span>Git / GitHub</span><span>AdMob</span><span>IronSource</span><span>Google Maps SDK</span>
@@ -354,29 +378,29 @@
       <section id="contact" class="content-section">
         <div class="section-tag">Get in Touch</div>
         <h2 class="section-heading">Let's Build <span class="text-accent">Something</span></h2>
-        <p class="contact-sub">Open to senior iOS roles, freelance projects, and consulting opportunities. You can review the projects, screenshots, and resume from this folder without any website hosting.</p>
+        <p class="contact-sub">Open to senior iOS roles, freelance projects, and consulting opportunities.</p>
 
         <div class="contact-grid">
           <div class="contact-info">
             <a href="mailto:saeed.asadullah96@gmail.com" class="cinfo-card" id="ci-email">
-              <div class="cinfo-icon email-icon"><i class="fas fa-envelope"></i></div>
+              <div class="cinfo-icon email-icon"><svg class="icon"><use href="#icon-envelope"></use></svg></div>
               <div><span class="cinfo-label">Email</span><span class="cinfo-val">saeed.asadullah96@gmail.com</span></div>
-              <i class="fas fa-arrow-up-right-from-square cinfo-arrow"></i>
+              <svg class="icon cinfo-arrow"><use href="#icon-external"></use></svg>
             </a>
             <a href="https://www.linkedin.com/in/asad-ullah-saeed-334b891b3/" target="_blank" rel="noopener noreferrer" class="cinfo-card" id="ci-linkedin">
-              <div class="cinfo-icon" style="background:rgba(0,119,181,0.12);color:#0077b5"><i class="fab fa-linkedin"></i></div>
+              <div class="cinfo-icon" style="background:rgba(0,119,181,0.12);color:#0077b5"><svg class="icon"><use href="#icon-linkedin"></use></svg></div>
               <div><span class="cinfo-label">LinkedIn</span><span class="cinfo-val">Asadullah Saeed</span></div>
-              <i class="fas fa-arrow-up-right-from-square cinfo-arrow"></i>
+              <svg class="icon cinfo-arrow"><use href="#icon-external"></use></svg>
             </a>
             <a href="https://apps.apple.com/pk/app/vpn-express-fast-secure-vpn/id6740760260" target="_blank" rel="noopener noreferrer" class="cinfo-card" id="ci-appstore">
-              <div class="cinfo-icon" style="background:var(--accent-light);color:var(--accent)"><i class="fab fa-app-store-ios"></i></div>
+              <div class="cinfo-icon" style="background:var(--accent-light);color:var(--accent)"><svg class="icon"><use href="#icon-appstore"></use></svg></div>
               <div><span class="cinfo-label">App Store</span><span class="cinfo-val">View Published Apps</span></div>
-              <i class="fas fa-arrow-up-right-from-square cinfo-arrow"></i>
+              <svg class="icon cinfo-arrow"><use href="#icon-external"></use></svg>
             </a>
             <a href="Resume-Asadullah-Saeed.pdf" target="_blank" rel="noopener noreferrer" class="cinfo-card" id="ci-resume" download>
-              <div class="cinfo-icon resume-icon"><i class="fas fa-file-lines"></i></div>
+              <div class="cinfo-icon resume-icon"><svg class="icon"><use href="#icon-file"></use></svg></div>
               <div><span class="cinfo-label">Resume</span><span class="cinfo-val">Download PDF</span></div>
-              <i class="fas fa-arrow-up-right-from-square cinfo-arrow"></i>
+              <svg class="icon cinfo-arrow"><use href="#icon-external"></use></svg>
             </a>
           </div>
 
@@ -386,8 +410,8 @@
               <div class="fg"><label for="femail">Email</label><input type="email" id="femail" name="email" placeholder="john@company.com" autocomplete="email" required></div>
             </div>
             <div class="fg"><label for="fmsg">Message</label><textarea id="fmsg" name="message" rows="5" placeholder="Tell me about your project..." required></textarea></div>
-            <button type="submit" class="btn-accent full" id="fsubmit">Open Email <i class="fas fa-paper-plane"></i></button>
-            <div class="form-ok" id="formOk"><i class="fas fa-check-circle"></i> Your email app is opening with the message ready.</div>
+            <button type="submit" class="btn-accent full" id="fsubmit">Open Email <svg class="icon"><use href="#icon-send"></use></svg></button>
+            <div class="form-ok" id="formOk"><svg class="icon"><use href="#icon-check"></use></svg> Your email app is opening with the message ready.</div>
           </form>
         </div>
       </section>
@@ -402,7 +426,7 @@
   <!-- Fixed bottom-right CTA -->
   <div class="fab-stack">
     <a href="#contact" class="fab-btn accent" id="fab-hire">Hire Me</a>
-    <a href="https://apps.apple.com/pk/app/vpn-express-fast-secure-vpn/id6740760260" target="_blank" rel="noopener noreferrer" class="fab-btn white" id="fab-app"><i class="fab fa-apple"></i> App Store</a>
+    <a href="https://apps.apple.com/pk/app/vpn-express-fast-secure-vpn/id6740760260" target="_blank" rel="noopener noreferrer" class="fab-btn white" id="fab-app"><svg class="icon"><use href="#icon-appstore"></use></svg> App Store</a>
   </div>
 
   <script defer src="/_vercel/insights/script.js"></script>
