@@ -1,0 +1,19 @@
+Asadullah Saeed - iOS Developer Portfolio
+
+This portfolio does not need hosting.
+
+How to view:
+1. Open index.html in any modern browser.
+2. Use the Resume buttons to open/download the attached PDF resume.
+3. App Store and LinkedIn buttons work when internet is available.
+
+Included:
+- index.html
+- styles.css
+- script.js
+- Resume-Asadullah-Saeed.pdf
+- Project thumbnails and App Store screenshots
+
+Contact:
+Email: saeed.asadullah96@gmail.com
+LinkedIn: https://www.linkedin.com/in/asad-ullah-saeed-334b891b3/
