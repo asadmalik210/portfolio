@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ===== REVEAL ON SCROLL =====
   const revealTargets = document.querySelectorAll(
-    '.project-card, .skill-block, .tl-card, .cinfo-card, .contact-form'
+    '.project-card, .skill-category, .tl-card, .cinfo-card, .contact-form'
   );
   revealTargets.forEach(el => el.classList.add('reveal'));
 
@@ -44,21 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.1 });
   revealTargets.forEach(el => revealObs.observe(el));
 
-  // ===== SKILL BARS =====
-  const bars = document.querySelectorAll('.sbar-fill');
-  const barObs = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.width = entry.target.dataset.w + '%';
-        barObs.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-  bars.forEach(b => barObs.observe(b));
-
   // ===== SUBTLE POINTER DEPTH =====
   if (window.matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) {
-    const tiltTargets = document.querySelectorAll('.project-card, .skill-block');
+    const tiltTargets = document.querySelectorAll('.project-card, .skill-category');
     tiltTargets.forEach(card => {
       card.addEventListener('pointermove', e => {
         const rect = card.getBoundingClientRect();

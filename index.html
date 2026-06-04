@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Asadullah Saeed | Senior iOS Developer">
   <meta name="twitter:description" content="Senior iOS Developer building secure, scalable iOS apps with Swift, UIKit, SwiftUI, Firebase, Maps, and NetworkExtension.">
   <meta name="twitter:image" content="https://asadmalik.xyz/og-image.jpg">
-  <link rel="stylesheet" href="styles.css?v=12">
+  <link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body>
   <a class="skip-link" href="#home">Skip to content</a>
@@ -44,6 +44,17 @@
     <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></symbol>
     <symbol id="icon-sitemap" viewBox="0 0 24 24"><path d="M12 5v6M6 19v-4h12v4"/><path d="M9 3h6v4H9ZM3 17h6v4H3ZM15 17h6v4h-6Z"/></symbol>
     <symbol id="icon-tools" viewBox="0 0 24 24"><path d="M14.5 6.5 17 4l3 3-2.5 2.5"/><path d="M3 21l8.8-8.8"/><path d="M7 4a5 5 0 0 0 6 6l7 7-3 3-7-7a5 5 0 0 0-6-6Z"/></symbol>
+    <symbol id="icon-swift" viewBox="0 0 24 24"><path d="M4 5.5c3.1 3.7 6.4 6.3 10.2 7.9-1.8.4-4.1.2-6.7-.7 2.4 2.5 5.2 3.9 8.5 4.2 1.7.2 3.1.8 4 1.6-.5-3.9-2.4-8.1-5.8-12.4 1.1 3 1 5.5-.2 7.4C10.6 11.8 7.3 9.1 4 5.5Z"/></symbol>
+    <symbol id="icon-swiftui" viewBox="0 0 24 24"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9Z"/><path d="M12 3v18M4 7.5l8 4.5 8-4.5M4 16.5l8-4.5 8 4.5"/></symbol>
+    <symbol id="icon-firebase" viewBox="0 0 24 24"><path d="m5 20 3.2-15 3.2 6.3 2.4-4.5L19 20Z"/><path d="M8.2 5 19 20 11.4 11.3"/></symbol>
+    <symbol id="icon-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="3"/><path d="M4.5 5.5v13c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-13M4.5 12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3"/></symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+    <symbol id="icon-api" viewBox="0 0 24 24"><path d="M7 8H5a3 3 0 0 0 0 6h2M17 8h2a3 3 0 0 1 0 6h-2M8.5 12h7M10 5l-3 14M17 5l-3 14"/></symbol>
+    <symbol id="icon-git" viewBox="0 0 24 24"><path d="M12 3 21 12 12 21 3 12Z"/><circle cx="9" cy="9" r="1.5"/><circle cx="15" cy="15" r="1.5"/><path d="M10.1 10.1 13.9 13.9M9 10.5V15"/></symbol>
+    <symbol id="icon-xcode" viewBox="0 0 24 24"><path d="M5 19 19 5M15 5l4 4M7 12l5 5M4 20l3.2-1.1L5.1 16.8Z"/></symbol>
+    <symbol id="icon-ai" viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="icon-wallet" viewBox="0 0 24 24"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5H19v14H6.5A2.5 2.5 0 0 1 4 16.5Z"/><path d="M16 12h4v4h-4a2 2 0 0 1 0-4Z"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5.4c0 4.3-2.7 7.8-7 9.6-4.3-1.8-7-5.3-7-9.6V6Z"/><path d="m9 12 2 2 4-5"/></symbol>
   </svg>
 
   <!-- Floating Nav Pill -->
@@ -271,40 +282,56 @@
         <div class="section-tag">Expertise</div>
         <h2 class="section-heading">Technical <span class="text-accent">Skills</span></h2>
 
-        <div class="skills-grid">
-          <div class="skill-block" id="skb-lang">
-            <h3><svg class="icon"><use href="#icon-terminal"></use></svg> Languages</h3>
-            <div class="skill-bars">
-              <div class="sbar-item"><div class="sbar-top"><span>Swift</span><span>95%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="95"></div></div></div>
-              <div class="sbar-item"><div class="sbar-top"><span>SwiftUI</span><span>88%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="88"></div></div></div>
-              <div class="sbar-item"><div class="sbar-top"><span>Objective-C</span><span>75%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="75"></div></div></div>
+        <div class="skill-showcase">
+          <div class="skill-category" id="skb-core">
+            <div class="skill-category-head">
+              <svg class="icon"><use href="#icon-terminal"></use></svg>
+              <h3>Core iOS Stack</h3>
+            </div>
+            <div class="skill-tiles">
+              <div class="skill-tile swift"><svg class="icon"><use href="#icon-swift"></use></svg><span>Swift</span></div>
+              <div class="skill-tile swiftui"><svg class="icon"><use href="#icon-swiftui"></use></svg><span>SwiftUI</span></div>
+              <div class="skill-tile uikit"><svg class="icon"><use href="#icon-layers"></use></svg><span>UIKit</span></div>
+              <div class="skill-tile objc"><svg class="icon"><use href="#icon-terminal"></use></svg><span>Objective-C</span></div>
             </div>
           </div>
 
-          <div class="skill-block" id="skb-fw">
-            <h3><svg class="icon"><use href="#icon-layers"></use></svg> Frameworks</h3>
-            <div class="skill-bars">
-              <div class="sbar-item"><div class="sbar-top"><span>UIKit</span><span>95%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="95"></div></div></div>
-              <div class="sbar-item"><div class="sbar-top"><span>Firebase</span><span>85%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
-              <div class="sbar-item"><div class="sbar-top"><span>CoreData / Realm</span><span>80%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="80"></div></div></div>
+          <div class="skill-category" id="skb-platform">
+            <div class="skill-category-head">
+              <svg class="icon"><use href="#icon-appstore"></use></svg>
+              <h3>Apple Platform</h3>
+            </div>
+            <div class="skill-tiles">
+              <div class="skill-tile xcode"><svg class="icon"><use href="#icon-xcode"></use></svg><span>Xcode</span></div>
+              <div class="skill-tile testflight"><svg class="icon"><use href="#icon-send"></use></svg><span>TestFlight</span></div>
+              <div class="skill-tile wallet"><svg class="icon"><use href="#icon-wallet"></use></svg><span>Apple Wallet</span></div>
+              <div class="skill-tile widgets"><svg class="icon"><use href="#icon-layers"></use></svg><span>WidgetKit</span></div>
             </div>
           </div>
 
-          <div class="skill-block" id="skb-arch">
-            <h3><svg class="icon"><use href="#icon-sitemap"></use></svg> Architecture</h3>
-            <div class="skill-cloud">
-              <span>MVVM</span><span>MVC</span><span>VIPER</span><span>Clean Architecture</span>
-              <span>Combine</span><span>RxSwift</span><span>DI</span><span>REST APIs</span>
-              <span>GraphQL</span><span>WebSockets</span>
+          <div class="skill-category" id="skb-services">
+            <div class="skill-category-head">
+              <svg class="icon"><use href="#icon-tools"></use></svg>
+              <h3>Services & SDKs</h3>
+            </div>
+            <div class="skill-tiles">
+              <div class="skill-tile firebase"><svg class="icon"><use href="#icon-firebase"></use></svg><span>Firebase</span></div>
+              <div class="skill-tile maps"><svg class="icon"><use href="#icon-map-pin"></use></svg><span>Google Maps</span></div>
+              <div class="skill-tile api"><svg class="icon"><use href="#icon-api"></use></svg><span>REST APIs</span></div>
+              <div class="skill-tile storage"><svg class="icon"><use href="#icon-database"></use></svg><span>CoreData / Realm</span></div>
             </div>
           </div>
 
-          <div class="skill-block" id="skb-tools">
-            <h3><svg class="icon"><use href="#icon-tools"></use></svg> Tools & SDKs</h3>
-            <div class="skill-cloud">
-              <span>Xcode</span><span>Instruments</span><span>TestFlight</span><span>Fastlane</span>
-              <span>Git / GitHub</span><span>AdMob</span><span>IronSource</span><span>Google Maps SDK</span>
-              <span>NetworkExtension</span><span>Apple Wallet</span><span>Figma</span><span>Jira</span>
+          <div class="skill-category" id="skb-special">
+            <div class="skill-category-head">
+              <svg class="icon"><use href="#icon-sitemap"></use></svg>
+              <h3>Architecture & Product Work</h3>
+            </div>
+            <div class="skill-tiles">
+              <div class="skill-tile mvvm"><svg class="icon"><use href="#icon-sitemap"></use></svg><span>MVVM</span></div>
+              <div class="skill-tile vpn"><svg class="icon"><use href="#icon-shield"></use></svg><span>NetworkExtension</span></div>
+              <div class="skill-tile ai"><svg class="icon"><use href="#icon-ai"></use></svg><span>AI / ML</span></div>
+              <div class="skill-tile git"><svg class="icon"><use href="#icon-git"></use></svg><span>Git / GitHub</span></div>
             </div>
           </div>
         </div>
