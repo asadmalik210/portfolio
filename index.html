@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Asadullah Saeed | Senior iOS Developer">
   <meta name="twitter:description" content="Senior iOS Developer building secure, scalable iOS apps with Swift, UIKit, SwiftUI, Firebase, Maps, and NetworkExtension.">
   <meta name="twitter:image" content="https://asadmalik.xyz/og-image.jpg">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
   <a class="skip-link" href="#home">Skip to content</a>
@@ -131,23 +131,46 @@
 
       <!-- HERO -->
       <section id="home" class="hero-section">
-        <div class="hero-label">Senior iOS Developer · Swift · UIKit · SwiftUI</div>
-        <h2 class="hero-heading">
-          <span class="line-white">Senior iOS</span>
-          <span class="line-outline">Developer for</span>
-          <span class="line-accent">App Store Apps</span>
-        </h2>
-        <p class="hero-desc">I build, ship, and maintain production iOS applications across mobility, secure networking, AI tools, maps, payments, and monetized App Store products.</p>
-        <div class="hero-highlights" aria-label="Career highlights">
-          <span>Published App Store apps</span>
-          <span>Production iOS ownership</span>
-          <span>Secure mobile architecture</span>
+        <div class="hero-stage">
+          <div class="hero-copy">
+            <div class="hero-label">Senior iOS Developer · Swift · UIKit · SwiftUI</div>
+            <h2 class="hero-heading">
+              <span class="line-white">Building iOS</span>
+              <span class="line-outline">apps people</span>
+              <span class="line-accent">actually use</span>
+            </h2>
+            <p class="hero-desc">I design, build, ship, and maintain production iOS applications across mobility, secure networking, AI tools, maps, payments, and monetized App Store products.</p>
+            <div class="hero-highlights" aria-label="Career highlights">
+              <span>App Store products</span>
+              <span>End-to-end iOS ownership</span>
+              <span>Secure mobile systems</span>
+            </div>
+            <div class="hero-btns" aria-label="Primary actions">
+              <a href="#projects" class="btn-accent" id="btn-work">View My Work <svg class="icon"><use href="#icon-arrow"></use></svg></a>
+              <a href="Resume-Asadullah-Saeed.pdf" target="_blank" rel="noopener noreferrer" class="btn-ghost" id="btn-resume" download>Resume <svg class="icon"><use href="#icon-download"></use></svg></a>
+              <a href="#contact"  class="btn-ghost"  id="btn-hire">Hire Me</a>
+            </div>
+          </div>
+
+          <div class="hero-showcase" aria-label="Highlighted iOS app work">
+            <div class="showcase-top">
+              <span class="showcase-status"><span class="avail-dot"></span> Shipping live apps</span>
+              <span class="showcase-count">4 featured</span>
+            </div>
+            <div class="showcase-phone main-phone">
+              <img src="appstore-screenshots/vpn-1.jpg" alt="VPN Express app screen preview">
+            </div>
+            <div class="showcase-phone side-phone">
+              <img src="appstore-screenshots/zgo-1.png" alt="ZGO app screen preview">
+            </div>
+            <div class="showcase-apps">
+              <div><img src="thumb-vpn.png" alt=""><span>VPN Express</span></div>
+              <div><img src="thumb-zgo.png" alt=""><span>ZGO App</span></div>
+              <div><img src="thumb-mycab.png" alt=""><span>MyCab</span></div>
+            </div>
+          </div>
         </div>
-        <div class="hero-btns" aria-label="Primary actions">
-          <a href="#projects" class="btn-accent" id="btn-work">View My Work <svg class="icon"><use href="#icon-arrow"></use></svg></a>
-          <a href="Resume-Asadullah-Saeed.pdf" target="_blank" rel="noopener noreferrer" class="btn-ghost" id="btn-resume" download>Resume <svg class="icon"><use href="#icon-download"></use></svg></a>
-          <a href="#contact"  class="btn-ghost"  id="btn-hire">Hire Me</a>
-        </div>
+
         <div class="hero-proof" aria-label="Portfolio proof points">
           <div class="proof-item"><strong>5+</strong><span>Years shipping iOS apps</span></div>
           <div class="proof-item"><strong>10+</strong><span>Mobile products delivered</span></div>
@@ -289,10 +312,10 @@
               <h3>Core iOS Stack</h3>
             </div>
             <div class="skill-tiles">
-              <div class="skill-tile swift"><svg class="icon"><use href="#icon-swift"></use></svg><span>Swift</span></div>
-              <div class="skill-tile swiftui"><svg class="icon"><use href="#icon-swiftui"></use></svg><span>SwiftUI</span></div>
-              <div class="skill-tile uikit"><svg class="icon"><use href="#icon-layers"></use></svg><span>UIKit</span></div>
-              <div class="skill-tile objc"><svg class="icon"><use href="#icon-terminal"></use></svg><span>Objective-C</span></div>
+              <div class="skill-tile swift"><span class="skill-name">Swift</span><span class="skill-note">Primary language</span></div>
+              <div class="skill-tile swiftui"><span class="skill-name">SwiftUI</span><span class="skill-note">Modern UI</span></div>
+              <div class="skill-tile uikit"><span class="skill-name">UIKit</span><span class="skill-note">Production interfaces</span></div>
+              <div class="skill-tile objc"><span class="skill-name">Objective-C</span><span class="skill-note">Legacy support</span></div>
             </div>
           </div>
 
@@ -302,10 +325,10 @@
               <h3>Apple Platform</h3>
             </div>
             <div class="skill-tiles">
-              <div class="skill-tile xcode"><svg class="icon"><use href="#icon-xcode"></use></svg><span>Xcode</span></div>
-              <div class="skill-tile testflight"><svg class="icon"><use href="#icon-send"></use></svg><span>TestFlight</span></div>
-              <div class="skill-tile wallet"><svg class="icon"><use href="#icon-wallet"></use></svg><span>Apple Wallet</span></div>
-              <div class="skill-tile widgets"><svg class="icon"><use href="#icon-layers"></use></svg><span>WidgetKit</span></div>
+              <div class="skill-tile xcode"><span class="skill-name">Xcode</span><span class="skill-note">Build & debug</span></div>
+              <div class="skill-tile testflight"><span class="skill-name">TestFlight</span><span class="skill-note">Beta releases</span></div>
+              <div class="skill-tile wallet"><span class="skill-name">Apple Wallet</span><span class="skill-note">Payment flows</span></div>
+              <div class="skill-tile widgets"><span class="skill-name">WidgetKit</span><span class="skill-note">Home screen widgets</span></div>
             </div>
           </div>
 
@@ -315,10 +338,10 @@
               <h3>Services & SDKs</h3>
             </div>
             <div class="skill-tiles">
-              <div class="skill-tile firebase"><svg class="icon"><use href="#icon-firebase"></use></svg><span>Firebase</span></div>
-              <div class="skill-tile maps"><svg class="icon"><use href="#icon-map-pin"></use></svg><span>Google Maps</span></div>
-              <div class="skill-tile api"><svg class="icon"><use href="#icon-api"></use></svg><span>REST APIs</span></div>
-              <div class="skill-tile storage"><svg class="icon"><use href="#icon-database"></use></svg><span>CoreData / Realm</span></div>
+              <div class="skill-tile firebase"><span class="skill-name">Firebase</span><span class="skill-note">Auth, messaging, analytics</span></div>
+              <div class="skill-tile maps"><span class="skill-name">Google Maps</span><span class="skill-note">Live location</span></div>
+              <div class="skill-tile api"><span class="skill-name">REST APIs</span><span class="skill-note">Backend integration</span></div>
+              <div class="skill-tile storage"><span class="skill-name">CoreData / Realm</span><span class="skill-note">Local persistence</span></div>
             </div>
           </div>
 
@@ -328,10 +351,10 @@
               <h3>Architecture & Product Work</h3>
             </div>
             <div class="skill-tiles">
-              <div class="skill-tile mvvm"><svg class="icon"><use href="#icon-sitemap"></use></svg><span>MVVM</span></div>
-              <div class="skill-tile vpn"><svg class="icon"><use href="#icon-shield"></use></svg><span>NetworkExtension</span></div>
-              <div class="skill-tile ai"><svg class="icon"><use href="#icon-ai"></use></svg><span>AI / ML</span></div>
-              <div class="skill-tile git"><svg class="icon"><use href="#icon-git"></use></svg><span>Git / GitHub</span></div>
+              <div class="skill-tile mvvm"><span class="skill-name">MVVM</span><span class="skill-note">App architecture</span></div>
+              <div class="skill-tile vpn"><span class="skill-name">NetworkExtension</span><span class="skill-note">VPN tunneling</span></div>
+              <div class="skill-tile ai"><span class="skill-name">AI / ML</span><span class="skill-note">Assistant features</span></div>
+              <div class="skill-tile git"><span class="skill-name">Git / GitHub</span><span class="skill-note">Team delivery</span></div>
             </div>
           </div>
         </div>
